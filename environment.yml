@@ -1,0 +1,21 @@
+name: sispi-eval
+channels:
+  - pytorch
+  - nvidia  # optional, for CUDA
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.1.0
+  - torchvision=0.16.0
+  - torchaudio=2.1.0
+  - numpy<2
+  - pip
+  - pip:
+      - open-clip-torch
+      - datasets
+      - scikit-learn
+      - tqdm
+      - reranking
+      - pillow
+
